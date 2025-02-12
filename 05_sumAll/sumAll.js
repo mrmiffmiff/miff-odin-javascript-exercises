@@ -1,6 +1,6 @@
 const sumAll = function (num1, num2) {
-    if (!(Number.isInteger(num1) || Number.isInteger(num2))) return "ERROR"; // error on non-integers
-    if (!(num1 > 0 || num2 > 0)) return "ERROR"; // error on non-positives
+    if (!(Number.isInteger(num1) && Number.isInteger(num2))) return "ERROR"; // error on non-integers
+    if (!(num1 > 0 && num2 > 0)) return "ERROR"; // error on non-positives
     let current, max;
     if (num1 < num2) {
         current = num1;
