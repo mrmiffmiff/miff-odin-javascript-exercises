@@ -12,16 +12,19 @@ const sum = function (arr) {
   return total;
 };
 
-const multiply = function () {
-
+const multiply = function (arr) {
+  let product = 1;
+  for (const x of arr) product *= x;
+  return product;
 };
 
-const power = function () {
-
+const power = function (a, b) {
+  return a ** b;
 };
 
-const factorial = function () {
-
+const factorial = function (num) {
+  if (num == 0 || num == 1) return 1;
+  else return num * factorial(num - 1);
 };
 
 // Do not edit below this line
